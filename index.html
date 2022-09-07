@@ -12,12 +12,17 @@
       rel="stylesheet"
     />
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      function dark(){
+        alert("hello")
+      }
+    </script>
 
     <title>Vite + TS</title>
   </head>
   <header>
-    <button id="theme-btn">Login.</button>
-  </header>
+    <button id="theme-btn" onclick="">Login.</button>
+  </header> 
   <body>
     <div id="mid">
       <div id="title" class="mid-1">Welcome Back.</div>
@@ -33,15 +38,15 @@
       </div>
       <div id="email-box" class="mid-1">
         <h6 >Email address</h6>
-        <input type="email" placeholder="Enter your email" />
+        <input id="email-inp" type="email" placeholder="Enter your email" required />
       </div>
       <div id="password-box" class="mid-1">
         <h6>Password</h6>
-        <input type="password" placeholder="Enter your password" />
+        <input type="password" placeholder="Enter your password" required />
       </div>
       <div id="remmber-sec" class="mid-1">
         <div id="remem-div">
-          <input type="checkbox" />
+          <input type="checkbox" id="chcek-box" />
           <h6>Remember me</h6>
         </div>
         <div id="forget-btn">
@@ -49,7 +54,7 @@
         </div>
       </div>
       <div id="div-btn2" class="mid-1">
-        <button id="sign-btn">Sign in</button>
+        <button id="sign-btn" >Sign in</button>
       </div>
       <div id="sign-tlt" class="mid-1">
         <h6>No account?</h6>
@@ -57,5 +62,7 @@
       </div>
       <div></div>
     </div>
+    <script type="module" src="src/main.ts"></script>
+
   </body>
 </html>

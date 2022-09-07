@@ -7,3 +7,10 @@ export function setupCounter(element: HTMLButtonElement) {
   element.addEventListener('click', () => setCounter(++counter))
   setCounter(0)
 }
+export function darktheme(element: HTMLButtonElement){
+  
+  element.addEventListener('click',()=> alert('hello?'))
+  document.documentElement.style.setProperty('--dark','--white');
+  console.log('hello')
+
+}
